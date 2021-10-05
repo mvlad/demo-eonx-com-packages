@@ -1,0 +1,7 @@
+easy_error_handler:
+    bugsnag_enabled: false
+    response:
+        sub_code: 'subCode'
+    translation_domain: 'messages'
+    verbose: '%env(bool:APP_DEBUG)%'
+
