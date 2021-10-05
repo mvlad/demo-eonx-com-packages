@@ -4,28 +4,40 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use App\Repository\CommentRepository;
-
+use Gedmo\Mapping\Annotation as Gedmo;
+use Gedmo\Timestampable\Traits\TimestampableEntity;
 
 /**
  * @ORM\Entity(repositoryClass=CommentRepository::class)
+ * @Gedmo\Loggable
  */
 class Comment
 {
+    use TimestampableEntity;
+
     /**
-     * @var int
-     *
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $id;
 
     /**
-     * @var string
-     *
      * @ORM\Column(type="text")
+     * @Gedmo\Versioned
      */
-    private $content;
+    private string $content;
+
+    /**
+     * @ORM\Column(type="text",nullable=true)
+     * @Gedmo\Versioned
+     */
+    private string $author;
+
+    public function getAuthor(): string
+    {
+        return $this->author;
+    }
 
 
     public function getId(): int
@@ -38,8 +50,15 @@ class Comment
         return $this->content;
     }
 
-    public function setContent(?string $content): void
+    public function setAuthor(string $author): self
+    {
+        $this->author = $author;
+        return $this;
+    }
+
+    public function setContent(?string $content): self
     {
         $this->content = $content;
+        return $this;
     }
 }

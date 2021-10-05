@@ -5,6 +5,9 @@
     "aws/aws-sdk-php": {
         "version": "3.196.2"
     },
+    "behat/transliterator": {
+        "version": "v1.3.0"
+    },
     "brick/math": {
         "version": "0.9.3"
     },
@@ -118,6 +121,9 @@
     "friendsofphp/proxy-manager-lts": {
         "version": "1.x-dev"
     },
+    "gedmo/doctrine-extensions": {
+        "version": "v3.1.0"
+    },
     "guzzlehttp/guzzle": {
         "version": "7.4-dev"
     },
@@ -216,6 +222,18 @@
     },
     "react/promise": {
         "version": "2.x-dev"
+    },
+    "stof/doctrine-extensions-bundle": {
+        "version": "1.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.2",
+            "ref": "6c1ceb662f8997085f739cd089bfbef67f245983"
+        },
+        "files": [
+            "config/packages/stof_doctrine_extensions.yaml"
+        ]
     },
     "symfony/cache": {
         "version": "v5.3.8"

@@ -26,7 +26,8 @@ final class UpdateEntityCommand extends Command
             throw new \RuntimeException('Failed to find a comment.');
         }
 
-        $comment->setContent('Test ' . \uniqid('', true));
+//        $comment->setContent('Content ' . \uniqid('', true));
+        $comment->setAuthor('Author ' . \uniqid('', true));
 
         $comment = $this->commentRepository->save($comment);
 
