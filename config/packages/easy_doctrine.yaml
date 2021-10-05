@@ -24,3 +24,7 @@ services:
     App\EventListener\CommentCreateListener:
         tags:
             - { name: kernel.event_listener, event: EonX\EasyDoctrine\Events\EntityCreatedEvent }
+
+    App\EventListener\CommentUpdateListener:
+        tags:
+            - { name: kernel.event_listener, event: EonX\EasyDoctrine\Events\EntityUpdatedEvent }
