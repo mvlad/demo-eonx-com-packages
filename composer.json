@@ -1,8 +1,8 @@
 {
     "type": "project",
-    "license": "proprietary",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": false,
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
@@ -13,8 +13,6 @@
         "symfony/framework-bundle": "5.3.*",
         "symfony/runtime": "5.3.*",
         "symfony/yaml": "5.3.*"
-    },
-    "require-dev": {
     },
     "config": {
         "optimize-autoloader": true,
