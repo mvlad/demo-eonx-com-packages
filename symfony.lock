@@ -82,6 +82,36 @@
     "doctrine/sql-formatter": {
         "version": "1.2.x-dev"
     },
+    "eonx-com/easy-activity": {
+        "version": "3.4",
+        "recipe": {
+            "repo": "github.com/eonx-com/symfony-recipes",
+            "branch": "master",
+            "version": "3.4",
+            "ref": "98bd44ce8d4bb5e5d7d682c2c62cd9e6c6850cf7"
+        },
+        "files": [
+            "config/packages/easy_activity.yaml"
+        ]
+    },
+    "eonx-com/easy-doctrine": {
+        "version": "3.4.20"
+    },
+    "eonx-com/easy-event-dispatcher": {
+        "version": "3.4.20"
+    },
+    "eonx-com/easy-random": {
+        "version": "3.4",
+        "recipe": {
+            "repo": "github.com/eonx-com/symfony-recipes",
+            "branch": "master",
+            "version": "3.4",
+            "ref": "7f445afa5cdc95c9ed36c046637208c264b62500"
+        },
+        "files": [
+            "config/packages/easy_random.yaml"
+        ]
+    },
     "friendsofphp/proxy-manager-lts": {
         "version": "1.x-dev"
     },
@@ -90,6 +120,9 @@
     },
     "monolog/monolog": {
         "version": "2.x-dev"
+    },
+    "nesbot/carbon": {
+        "version": "2.56.0"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -102,6 +135,9 @@
     },
     "psr/log": {
         "version": "1.1.4"
+    },
+    "symfony/amqp-messenger": {
+        "version": "v5.3.7"
     },
     "symfony/cache": {
         "version": "v5.3.8"
@@ -132,6 +168,9 @@
     },
     "symfony/doctrine-bridge": {
         "version": "5.3.x-dev"
+    },
+    "symfony/doctrine-messenger": {
+        "version": "v5.3.13"
     },
     "symfony/dotenv": {
         "version": "v5.3.8"
@@ -194,6 +233,18 @@
     "symfony/http-kernel": {
         "version": "v5.3.9"
     },
+    "symfony/messenger": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "25e3c964d3aee480b3acc3114ffb7940c89edfed"
+        },
+        "files": [
+            "config/packages/messenger.yaml"
+        ]
+    },
     "symfony/monolog-bridge": {
         "version": "5.3.x-dev"
     },
@@ -236,6 +287,9 @@
     "symfony/polyfill-php81": {
         "version": "v1.23.0"
     },
+    "symfony/polyfill-uuid": {
+        "version": "v1.24.0"
+    },
     "symfony/property-access": {
         "version": "5.3.x-dev"
     },
@@ -244,6 +298,9 @@
     },
     "symfony/proxy-manager-bridge": {
         "version": "5.3.x-dev"
+    },
+    "symfony/redis-messenger": {
+        "version": "v5.3.13"
     },
     "symfony/routing": {
         "version": "5.3",
@@ -261,6 +318,9 @@
     "symfony/runtime": {
         "version": "v5.3.4"
     },
+    "symfony/serializer": {
+        "version": "v5.3.13"
+    },
     "symfony/service-contracts": {
         "version": "v2.4.0"
     },
@@ -269,6 +329,25 @@
     },
     "symfony/string": {
         "version": "v5.3.7"
+    },
+    "symfony/translation": {
+        "version": "5.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.3",
+            "ref": "da64f5a2b6d96f5dc24914517c0350a5f91dee43"
+        },
+        "files": [
+            "config/packages/translation.yaml",
+            "translations/.gitignore"
+        ]
+    },
+    "symfony/translation-contracts": {
+        "version": "v2.5.0"
+    },
+    "symfony/uid": {
+        "version": "v5.3.13"
     },
     "symfony/var-dumper": {
         "version": "v5.3.8"

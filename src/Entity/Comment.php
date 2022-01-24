@@ -12,20 +12,16 @@ use App\Repository\CommentRepository;
 class Comment
 {
     /**
-     * @var int
-     *
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $id;
 
     /**
-     * @var string
-     *
      * @ORM\Column(type="text")
      */
-    private $content;
+    private string $content;
 
 
     public function getId(): int

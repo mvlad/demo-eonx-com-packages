@@ -1,0 +1,22 @@
+easy_activity:
+    table_name: activity_logs
+
+    disallowed_properties:
+        - updatedAt
+        - createdAt
+
+    subjects:
+        App\Entity\Comment: ~
+#        App\Entity\SomeEntity:
+#            allowed_properties:
+#                - content
+#                - description
+#            disallowed_properties:
+#                - author
+#            type: SomeEntity
+
+
+#services:
+#    object_normilizer:
+#        class: Symfony\Component\Serializer\Normalizer\ObjectNormalizer
+#        tags: [serializer.normalizer]
