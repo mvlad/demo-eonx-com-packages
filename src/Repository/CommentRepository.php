@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Repository;
 
@@ -13,10 +14,16 @@ final class CommentRepository extends ServiceEntityRepository
         parent::__construct($registry, Comment::class);
     }
 
+    /**
+     * @throws \Throwable
+     */
     public function save(Comment $comment): Comment
     {
-        $this->getEntityManager()->persist($comment);
-        $this->getEntityManager()->flush();
+        $this->getEntityManager()->wrapInTransaction(function() use ($comment) {
+            $this->getEntityManager()->persist($comment);
+            $this->getEntityManager()->flush();
+        });
+
 
         return $comment;
     }

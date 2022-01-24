@@ -1,24 +1,6 @@
 {
-    "aws/aws-crt-php": {
-        "version": "v1.0.2"
-    },
-    "aws/aws-sdk-php": {
-        "version": "3.196.2"
-    },
-    "brick/math": {
-        "version": "0.9.3"
-    },
-    "bugsnag/bugsnag": {
-        "version": "v3.26.1"
-    },
-    "composer/ca-bundle": {
-        "version": "1.x-dev"
-    },
     "composer/package-versions-deprecated": {
         "version": "1.x-dev"
-    },
-    "container-interop/container-interop": {
-        "version": "1.2.0"
     },
     "doctrine/annotations": {
         "version": "1.0",
@@ -100,86 +82,14 @@
     "doctrine/sql-formatter": {
         "version": "1.2.x-dev"
     },
-    "dragonmantank/cron-expression": {
-        "version": "v3.1.0"
-    },
-    "elasticsearch/elasticsearch": {
-        "version": "7.x-dev"
-    },
-    "eonx-com/easy-monorepo": {
-        "version": "2.5-dev"
-    },
-    "ezimuel/guzzlestreams": {
-        "version": "3.0-dev"
-    },
-    "ezimuel/ringphp": {
-        "version": "1.1-dev"
-    },
     "friendsofphp/proxy-manager-lts": {
         "version": "1.x-dev"
-    },
-    "guzzlehttp/guzzle": {
-        "version": "7.4-dev"
-    },
-    "guzzlehttp/promises": {
-        "version": "1.4-dev"
-    },
-    "guzzlehttp/psr7": {
-        "version": "1.x-dev"
-    },
-    "illuminate/collections": {
-        "version": "8.x-dev"
-    },
-    "illuminate/contracts": {
-        "version": "8.x-dev"
-    },
-    "illuminate/macroable": {
-        "version": "8.x-dev"
-    },
-    "illuminate/support": {
-        "version": "8.x-dev"
     },
     "laminas/laminas-code": {
         "version": "4.5.x-dev"
     },
-    "laminas/laminas-escaper": {
-        "version": "2.10.x-dev"
-    },
-    "laminas/laminas-stdlib": {
-        "version": "3.7.x-dev"
-    },
-    "laminas/laminas-uri": {
-        "version": "2.10.x-dev"
-    },
-    "laminas/laminas-validator": {
-        "version": "2.16.x-dev"
-    },
     "monolog/monolog": {
         "version": "2.x-dev"
-    },
-    "mtdowling/jmespath.php": {
-        "version": "2.6-dev"
-    },
-    "nesbot/carbon": {
-        "version": "2.x-dev"
-    },
-    "nette/utils": {
-        "version": "v3.2.x-dev"
-    },
-    "nyholm/psr7": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "1.0",
-            "ref": "0cd4d2d0e7f646fda75f9944f747a56e6ed13d4c"
-        },
-        "files": [
-            "config/packages/nyholm_psr7.yaml"
-        ]
-    },
-    "php-http/message-factory": {
-        "version": "1.0-dev"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -190,32 +100,8 @@
     "psr/event-dispatcher": {
         "version": "1.0.0"
     },
-    "psr/http-client": {
-        "version": "1.0.x-dev"
-    },
-    "psr/http-factory": {
-        "version": "1.0.x-dev"
-    },
-    "psr/http-message": {
-        "version": "1.0.x-dev"
-    },
     "psr/log": {
         "version": "1.1.4"
-    },
-    "psr/simple-cache": {
-        "version": "1.0.x-dev"
-    },
-    "ralouphie/getallheaders": {
-        "version": "3.0.3"
-    },
-    "ramsey/collection": {
-        "version": "1.2.1"
-    },
-    "ramsey/uuid": {
-        "version": "4.x-dev"
-    },
-    "react/promise": {
-        "version": "2.x-dev"
     },
     "symfony/cache": {
         "version": "v5.3.8"
@@ -259,9 +145,6 @@
     "symfony/event-dispatcher-contracts": {
         "version": "v2.4.0"
     },
-    "symfony/expression-language": {
-        "version": "5.3.x-dev"
-    },
     "symfony/filesystem": {
         "version": "v5.3.4"
     },
@@ -301,9 +184,6 @@
             "src/Controller/.gitignore",
             "src/Kernel.php"
         ]
-    },
-    "symfony/http-client": {
-        "version": "5.3.x-dev"
     },
     "symfony/http-client-contracts": {
         "version": "v2.4.0"
@@ -356,12 +236,6 @@
     "symfony/polyfill-php81": {
         "version": "v1.23.0"
     },
-    "symfony/polyfill-uuid": {
-        "version": "1.23-dev"
-    },
-    "symfony/process": {
-        "version": "5.3.x-dev"
-    },
     "symfony/property-access": {
         "version": "5.3.x-dev"
     },
@@ -370,9 +244,6 @@
     },
     "symfony/proxy-manager-bridge": {
         "version": "5.3.x-dev"
-    },
-    "symfony/psr-http-message-bridge": {
-        "version": "2.1-dev"
     },
     "symfony/routing": {
         "version": "5.3",
@@ -399,25 +270,6 @@
     "symfony/string": {
         "version": "v5.3.7"
     },
-    "symfony/translation": {
-        "version": "5.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "5.3",
-            "ref": "da64f5a2b6d96f5dc24914517c0350a5f91dee43"
-        },
-        "files": [
-            "config/packages/translation.yaml",
-            "translations/.gitignore"
-        ]
-    },
-    "symfony/translation-contracts": {
-        "version": "2.5.x-dev"
-    },
-    "symfony/uid": {
-        "version": "5.3.x-dev"
-    },
     "symfony/var-dumper": {
         "version": "v5.3.8"
     },
@@ -426,11 +278,5 @@
     },
     "symfony/yaml": {
         "version": "v5.3.6"
-    },
-    "voku/portable-ascii": {
-        "version": "1.5.6"
-    },
-    "webmozart/assert": {
-        "version": "1.10-dev"
     }
 }
